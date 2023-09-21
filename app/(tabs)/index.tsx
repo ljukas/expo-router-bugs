@@ -7,9 +7,13 @@ export default function TabOneScreen() {
 
   return (
     <View style={styles.container}>
-        <Pressable onPress={() => router.push('/(app)/project/1')}>
-          <Text style={styles.title}>Press me for cyclical error</Text>
-        </Pressable>
+      <Pressable onPress={() => router.push('/(app)/project/1')}>
+        <Text style={styles.title}>Press me for cyclical error</Text>
+      </Pressable>
+
+      <Pressable onPress={() => router.push('/slotIssue/header')}>
+        <Text style={styles.title}>Link to Slot intercepting navigation.setOptions</Text>
+      </Pressable>
     </View>
   );
 }
@@ -19,6 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    rowGap: 40
   },
   title: {
     fontSize: 20,

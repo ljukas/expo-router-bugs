@@ -8,7 +8,7 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
         <Pressable onPress={() => router.push('/(app)/project/1')}>
-          <Text style={styles.title}>Press me</Text>
+          <Text style={styles.title}>Press me for cyclical error</Text>
         </Pressable>
     </View>
   );
